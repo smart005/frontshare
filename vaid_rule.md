@@ -1,17 +1,6 @@
-JS工具(字符串规格化、get/post/put/delete/patch请求、基本验证处理)
---------
-*js字符串格式化*
-```doc
-方法：format
-参数(args):param1,param2,...
-示例:
-"{0},{1}".format("val1","val2");
-```
-*js正则验证*
-```doc
-方法:String.prototype.validate = function(regularStr)
-参数:
-regularStr	正则表达式;(也可以引用$.validateRegular.xxx正则)
+正则验证规则参数
+-----
+```js
 $.validateRegular = {
 	//仅数字
 	OnlyNumber: /^[\d]+$/,
@@ -46,6 +35,4 @@ $.validateRegular = {
 	//判断Json字符串
 	IsJson: /^\{(.+:.+,*){1,}\}$/
 };
-示例:
-
 ```
