@@ -71,3 +71,17 @@ str1.equalsIgnoreCase(str2) 输出 true
 方法:	String.prototype.reverseString = function()
 示例:	"abc".reverseString() 输出 cba
 ```
+
+*JQuery扩展方法*
+```doc
+字符串空值判断
+$.isNullOrEmpty("....") true:空;false:非空;
+
+检测是否url地址
+$.checkUrl(url) true:http或https开头url;false:非url;
+
+返回url域名(主机地址最后带/)
+$.protocol.domain()
+
+
+```
