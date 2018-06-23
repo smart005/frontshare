@@ -60,3 +60,14 @@ str1.equalsIgnoreCase(str2) 输出 true
 参数:	thisStr要查找的字符串
 示例:	"qazabc5678".isContainerThisCharByInitials("abc") 输出 false
 ```
+*字符串结尾是否包含指定字符*
+```doc
+方法:	String.prototype.isContainerThisCharByEnd = function(thisStr)
+参数:	thisStr要查找的字符串
+示例:	"qazabc5678".isContainerThisCharByEnd("78") 输出 true
+```
+*字符串反转*
+```doc
+方法:	String.prototype.reverseString = function()
+示例:	"abc".reverseString() 输出 cba
+```
