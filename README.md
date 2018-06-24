@@ -73,6 +73,7 @@ str1.equalsIgnoreCase(str2) 输出 true
 ```
 
 *JQuery扩展方法*
+###### 1.基本方法
 ```doc
 字符串空值判断
 $.isNullOrEmpty("....") true:空;false:非空;
@@ -113,4 +114,21 @@ value:	需要设置的参数值
 $.getScriptUrl(scriptname)
 scriptname:	脚本文件名(包含.js)
 返回:	脚本文件url地址
+
+获取GUID
+$.GUID()
+返回:	32+4位的GUID随机数
+
+生成随机数
+$.GetRandomNum(min,max)
+min:	最小随机数
+max:	最大随机数
+返回:	在min和max范围内的随机数
+
+限制字符串(可用于输入框输入固定长度的字符串)
+(一个汉字算两个字符)
+$.StrLimit(sourcestr, len)
+sourcestr:	原字符串
+len:		要限制的长度
+返回:	从索引0开始,len长度的字符串
 ```
