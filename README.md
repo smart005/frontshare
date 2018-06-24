@@ -1,5 +1,15 @@
 JS工具(字符串规格化、get/post/put/delete/patch请求、基本验证处理)
 --------
+```html
+<!--
+脚本引用(slcore.min.js是基于jquery和jquery.cookie开发的，因此需要引用以下3个文件)
+其中slcore.min仓库中有,其它两个自行下载
+-->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/slcore.min.js"></script>	
+```
+
 *js字符串格式化*
 ```doc
 方法:	String.prototype.format = function(args)
