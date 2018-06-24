@@ -132,3 +132,24 @@ sourcestr:	原字符串
 len:		要限制的长度
 返回:	从索引0开始,len长度的字符串
 ```
+###### 2.GET\POST\PUT\DELETE\PATCH请求
+```doc
+以下数据提交和返回均是json;
+在发起请求头里添加了以下两个参数:
+token:$.cookie('token')	//因此在登录成功后要将token设置到cookie中
+client:"h5" //服务端用于区分是哪个端做的请求
+
+
+GET请求
+$.Request.getRequest(url, data, successCall, completeCall)
+url:	请求的完整url
+data:	提交的数据{"key1":value1,"key2":value2,...}
+successCall:	请求成功回调
+function(response){
+	//response为请求成功返回的结果
+}
+completeCall:	请求完成回调
+function(){
+	//请求完成回调
+}
+```
