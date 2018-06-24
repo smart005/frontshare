@@ -1,5 +1,8 @@
 JS工具(字符串规格化、get/post/put/delete/patch请求、基本验证处理)
 --------
+
+<font color=#ff0000 size=9 face="黑体">都来了点个星再走吧!!!</font>
+
 ```html
 <!--
 脚本引用(slcore.min.js是基于jquery和jquery.cookie开发的，因此需要引用以下3个文件)
