@@ -83,5 +83,34 @@ $.checkUrl(url) true:http或https开头url;false:非url;
 返回url域名(主机地址最后带/)
 $.protocol.domain()
 
+获取当前Url参数值
+$.UrlParams.get(paramkey)
+paramkey:	url参数名
 
+向当前url后面追加参数
+$.UrlParams.adds(args)
+args:	参数集(如:{key1:arg1,key2:arg2,...}或[{...}])
+返回:	追加参数后完整的url
+
+向当前url后面追加参数
+$.UrlParams.add(keyname, value)
+keyname:	参数键
+value:		参数值
+返回:	追加参数后完整的url
+
+移除url参数
+$.UrlParams.remove(key)
+key:	需要移除参数的键
+返回:	移除参数后完整的url
+
+设置url中的参数值
+$.UrlParams.set(key,value)
+key:	需要设置的参数键
+value:	需要设置的参数值
+返回:	更新参数值后完整的url
+
+根据脚本文件名获取脚本引用地址
+$.getScriptUrl(scriptname)
+scriptname:	脚本文件名(包含.js)
+返回:	脚本文件url地址
 ```
