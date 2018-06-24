@@ -1,7 +1,8 @@
 JS工具(字符串规格化、get/post/put/delete/patch请求、基本验证处理)
 --------
 
-<font font color="#dd0000" size=9 face="黑体">都来了点个星再走吧!!!</font>
+<font color="#dd0000" size=9 face="黑体">都来了点个星再走吧!!!</font>
+<font color=#0099ff size=12 face="黑体">黑体</font>
 
 ```html
 <!--
