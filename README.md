@@ -138,10 +138,66 @@ len:		要限制的长度
 在发起请求头里添加了以下两个参数:
 token:$.cookie('token')	//因此在登录成功后要将token设置到cookie中
 client:"h5" //服务端用于区分是哪个端做的请求
-
-
+```
+```doc
 GET请求
 $.Request.getRequest(url, data, successCall, completeCall)
+url:	请求的完整url
+data:	提交的数据{"key1":value1,"key2":value2,...}
+successCall:	请求成功回调
+function(response){
+	//response为请求成功返回的结果
+}
+completeCall:	请求完成回调
+function(){
+	//请求完成回调
+}
+```
+```doc
+POST请求
+$.Request.postRequest(url, data, successCall, completeCall)
+url:	请求的完整url
+data:	提交的数据{"key1":value1,"key2":value2,...}
+successCall:	请求成功回调
+function(response){
+	//response为请求成功返回的结果
+}
+completeCall:	请求完成回调
+function(){
+	//请求完成回调
+}
+```
+```doc
+put请求
+$.Request.putRequest(url, data, successCall, completeCall)
+url:	请求的完整url
+data:	提交的数据{"key1":value1,"key2":value2,...}
+successCall:	请求成功回调
+function(response){
+	//response为请求成功返回的结果
+}
+completeCall:	请求完成回调
+function(){
+	//请求完成回调
+}
+```
+```doc
+DELETE请求
+$.Request.deleteRequest(url, data, successCall, completeCall)
+url:	请求的完整url
+data:	提交的数据{"key1":value1,"key2":value2,...}
+successCall:	请求成功回调
+function(response){
+	//response为请求成功返回的结果
+}
+completeCall:	请求完成回调
+function(){
+	//请求完成回调
+}
+```
+```doc
+PATCH请求
+$.Request.patchRequest(url, data, successCall, completeCall)
 url:	请求的完整url
 data:	提交的数据{"key1":value1,"key2":value2,...}
 successCall:	请求成功回调
